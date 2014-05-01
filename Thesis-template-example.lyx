@@ -1,0 +1,3114 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass report
+\begin_preamble
+\usepackage{sectsty} 
+\chapterfont{\Large \centering} 
+\date{}
+\usepackage{epsfig}
+\usepackage{pst-grad} % For gradients
+\usepackage{pst-plot} % For axes
+\usepackage{cite}
+\newcommand\listappendixname{LIST OF APPENDICES}
+\newcommand\appcaption[1]{%
+\addcontentsline{app}{section}{#1}}
+
+\newcommand\listofappendices{%
+\chapter*{\listappendixname}\@starttoc{app}}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement th
+\paperfontsize 12
+\spacing double
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\branch sd
+\selected 0
+\filename_suffix 0
+\color #cbcbcb
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1in
+\topmargin 1.5in
+\rightmargin 1in
+\bottommargin 1.5in
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+contentsname}{
+\backslash
+Large 
+\backslash
+center{TABLE OF CONTENTS}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size larger
+\noun on
+Reduced-Dimensional Models of Porous-Medium 
+\begin_inset Newline newline
+\end_inset
+
+Convection
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+by
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Stewie Griffin
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\align center
+
+\series bold
+A dissertation submitted in partial fulfillment
+\begin_inset Newline newline
+\end_inset
+
+ of the requirements for the degree of 
+\begin_inset Newline newline
+\end_inset
+
+Doctor of Philosophy 
+\begin_inset Newline newline
+\end_inset
+
+(Physics) 
+\begin_inset Newline newline
+\end_inset
+
+in the University of Michigan 
+\begin_inset Newline newline
+\end_inset
+
+2013 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+Doctoral Committee:
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Professor Patrick Starr
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Professor Etzio Auditore
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Professor Timothy Heidecker
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Professor James Dangle
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+copyright
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset space ~
+\end_inset
+
+Stewie Griffin 2013
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0.5ex"
+width "100line%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+DEDICATION
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{DEDICATION}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{2}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+To Maman and Baba.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+ACKNOWLEDGMENT
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{plain}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{ACKNOWLEDGMENT}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{3}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{LIST OF FIGURES}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+listfigurename}{LIST OF FIGURES}
+\end_layout
+
+\end_inset
+
+
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{LIST OF APPENDICES}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+listofappendices
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+CHAPTER I
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Chapter I.
+ Introduction}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{1}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+\end_layout
+
+\begin_layout Standard
+Proin mauris orci, sagittis ut convallis at, egestas eget justo.
+ Nunc sed nunc sit amet nunc sagittis venenatis ac quis turpis.
+ Curabitur sit amet sapien non sapien pretium molestie.
+ Aliquam erat volutpat.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Quisque elementum, eros porttitor porta dictum, tortor metus commodo velit,
+ nec dapibus velit ipsum a dolor.
+ Mauris a luctus ligula.
+ Duis non tellus purus, sit amet tincidunt quam.
+ Pellentesque quis arcu dolor, ac dictum purus.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Chapter*
+CHAPTER II
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+Background
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Chapter II.
+ Background}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{2}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+ 
+\end_layout
+
+\begin_layout Section
+Low-dimensional modeling
+\end_layout
+
+\begin_layout Subsection
+The global attractor
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Subsection
+Proper Orthogonal Decomposition
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Subsection
+Discussion
+\end_layout
+
+\begin_layout Standard
+The basis obtained as above can be proven to be optimal in the sense that
+ the total ensemble-average energy in its first 
+\begin_inset Formula $N$
+\end_inset
+
+ modes is greater that that of any other basis 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Holmes1998"
+
+\end_inset
+
+.
+ Thus, the use of POD constitutes a clear trade off: In order to attain
+ energetic optimality, one has to measure a complete history of the dynamics
+ and thus give up truly predictive power.
+ The method serves as a powerful tool for empirical analysis of the dynamics
+ but clearly fails to.
+\end_layout
+
+\begin_layout Standard
+Nevertheless, POD has been used to construct highly truncated models for
+ a number of problems including turbulence coherent structures in Navier-Stokes
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Holmes1998"
+
+\end_inset
+
+ and  convection 
+\begin_inset CommandInset citation
+LatexCommand citet
+key "boyd2001chebyshev-spectral-methods"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+We, on the other hand, set out to derive 
+\shape italic
+a priori 
+\shape default
+Galerkin methods for the problem of porous-medium convection.
+ The main goal of this dissertation is to explore how to compute 
+\shape italic
+a priori
+\shape default
+ bases that are adapted specifically to the equations at hand and to the
+ given parameter regime.
+ The theoretical motivation also gives us hope of gaining insights into
+ some of the coherent structures emerging in the porous-medium problem.
+ We begin by stating the problem and reviewing the past phenomenological
+ studies pertaining to porous-medium convection.
+ The physical insights derived from the phenomenology, supplemented by our
+ own direct numerical simulations, will guide us to assemble certain elements
+ of our modeling strategy.
+ The theoretical core of the method together with the complete derivations
+ will follow that, and finally, numerical simulations of the reduced models
+ constructed using the method will be studied extensively.
+\end_layout
+
+\begin_layout Section
+Porous-medium convection
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Subsection
+Statement of the problem.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename thebox-final.pdf
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+The geometry of the three-dimensional setup and the boundary conditions.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Subsection
+Phenomenology
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Subsection
+The minimal flow unit
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Chapter*
+CHAPTER III
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Direct numerical simulations
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:CHAPTER-IIIDirect-numerical"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Chapter III.
+   Direct numerical simulations}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{3}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Section
+Numerical methods
+\end_layout
+
+\begin_layout Standard
+Our direct numerical simulations are based on a pseudospectral collocation
+ method 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "boyd2001chebyshev-spectral-methods"
+
+\end_inset
+
+
+\series bold
+.
+ 
+\series default
+We write the equations of motion in terms of fluctuations about the conduction
+ solution 
+\begin_inset Formula $1-z$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{eqnarray}
+\partial_{t}\theta & = & -\boldsymbol{u}.\boldsymbol{\nabla}\theta+\Delta\theta-w\label{eq:equation-of-motion-with-tau-1}\\
+\Delta w & = & Ra\frac{\partial^{2}\theta}{\partial x^{2}}\label{eq:momentum-equation-1}\\
+\boldsymbol{\nabla}\cdot\boldsymbol{u} & = & 0.\label{eq:incompressibility-1}
+\end{eqnarray}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Subsection
+Boundary conditions
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Section
+Simulations
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+CHAPTER IV
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Galerkin methods from upper-bound theory
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Chapter IV.
+ Galerkin methods from upper-bound theory  }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{4}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Section
+The Fourier-Galerkin method
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\begin_inset Formula 
+\begin{eqnarray}
+\mathsf{S\left\{ \theta\right\} } & = & \frac{1}{2}\left(\mathscr{L}\left\{ \theta\right\} +\mathscr{L^{\dagger}}\left\{ \theta\right\} \right)=-\Delta\theta+\frac{1}{2}\left(\tau'w\left\{ \theta\right\} +w\left\{ \tau'\theta\right\} \right)\label{eq:defineSymmmetricOperator}\\
+\mathsf{A\left\{ \theta\right\} } & = & \frac{1}{2}\left(\mathscr{L}\left\{ \theta\right\} -\mathscr{L^{\dagger}\left\{ \theta\right\} }\right)=\frac{1}{2}\left(\tau'w\left\{ \theta\right\} -w\left\{ \tau'\theta\right\} \right).\label{eq:defineAntisymmetricOperator}
+\end{eqnarray}
+
+\end_inset
+
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Subsection
+Numerical computation of the spectrum
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+CHAPTER V
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Low-dimensional models
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Chapter V.
+  Low-dimensional models }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{5}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Section
+Finite truncations
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+\end_layout
+
+\begin_layout Standard
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Aenean dapibus ligula ut sapien tristique non aliquam lorem
+ facilisis.
+ Mauris mauris turpis, semper nec adipiscing et, adipiscing sed nisl.
+ Proin euismod ultricies erat, vel ullamcorper diam aliquet ut.
+ Quisque pellentesque vestibulum odio, vel mattis elit pellentesque in.
+ Proin sit amet tellus odio.
+ Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+ cubilia Curae; Vestibulum ante ipsum primis in faucibus orci luctus et
+ ultrices posuere cubilia Curae; Vivamus laoreet fermentum tempor.
+ Proin varius, dolor quis venenatis bibendum, felis quam imperdiet velit,
+ eget rhoncus ligula ipsum et dui.
+ Nullam facilisis dignissim dui, non sollicitudin metus consequat vitae.
+\end_layout
+
+\begin_layout Standard
+Pellentesque scelerisque sagittis enim, at hendrerit nisi imperdiet id.
+ Donec fringilla cursus velit et condimentum.
+ Mauris adipiscing consectetur porta.
+ Quisque condimentum eros sit amet magna ultrices nec auctor quam vulputate.
+ Morbi orci dolor, tincidunt euismod molestie eu, rhoncus vitae orci.
+ Integer vel lectus nibh, tempus feugiat nibh.
+ Mauris eu est quis sapien ullamcorper sollicitudin.
+ Donec sed diam erat, et congue orci.
+ Mauris non metus mauris.
+ 
+\end_layout
+
+\begin_layout Section
+Numerical methods
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+\end_layout
+
+\begin_layout Standard
+Proin mauris orci, sagittis ut convallis at, egestas eget justo.
+ Nunc sed nunc sit amet nunc sagittis venenatis ac quis turpis.
+ Curabitur sit amet sapien non sapien pretium molestie.
+ Aliquam erat volutpat.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Quisque elementum, eros porttitor porta dictum, tortor metus commodo velit,
+ nec dapibus velit ipsum a dolor.
+ Mauris a luctus ligula.
+ Duis non tellus purus, sit amet tincidunt quam.
+ Pellentesque quis arcu dolor, ac dictum purus.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+ 
+\end_layout
+
+\begin_layout Section
+Direct numerical simulations
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+\end_layout
+
+\begin_layout Standard
+Proin mauris orci, sagittis ut convallis at, egestas eget justo.
+ Nunc sed nunc sit amet nunc sagittis venenatis ac quis turpis.
+ Curabitur sit amet sapien non sapien pretium molestie.
+ Aliquam erat volutpat.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Quisque elementum, eros porttitor porta dictum, tortor metus commodo velit,
+ nec dapibus velit ipsum a dolor.
+ Mauris a luctus ligula.
+ Duis non tellus purus, sit amet tincidunt quam.
+ Pellentesque quis arcu dolor, ac dictum purus.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+ 
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+\end_layout
+
+\begin_layout Standard
+Proin mauris orci, sagittis ut convallis at, egestas eget justo.
+ Nunc sed nunc sit amet nunc sagittis venenatis ac quis turpis.
+ Curabitur sit amet sapien non sapien pretium molestie.
+ Aliquam erat volutpat.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Quisque elementum, eros porttitor porta dictum, tortor metus commodo velit,
+ nec dapibus velit ipsum a dolor.
+ Mauris a luctus ligula.
+ Duis non tellus purus, sit amet tincidunt quam.
+ Pellentesque quis arcu dolor, ac dictum purus.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+ 
+\end_layout
+
+\begin_layout Section
+Dynamical systems models
+\end_layout
+
+\begin_layout Subsection
+Low 
+\begin_inset Formula $Ra$
+\end_inset
+
+ regime: 
+\begin_inset Formula $Ra=100$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+\end_layout
+
+\begin_layout Standard
+Proin mauris orci, sagittis ut convallis at, egestas eget justo.
+ Nunc sed nunc sit amet nunc sagittis venenatis ac quis turpis.
+ Curabitur sit amet sapien non sapien pretium molestie.
+ Aliquam erat volutpat.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Quisque elementum, eros porttitor porta dictum, tortor metus commodo velit,
+ nec dapibus velit ipsum a dolor.
+ Mauris a luctus ligula.
+ Duis non tellus purus, sit amet tincidunt quam.
+ Pellentesque quis arcu dolor, ac dictum purus.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+ 
+\end_layout
+
+\begin_layout Subsection
+High 
+\begin_inset Formula $Ra$
+\end_inset
+
+ regime, minimal flow unit:
+\begin_inset Formula $Ra=7\times10^{3}$
+\end_inset
+
+ and 
+\begin_inset Formula $Ra=10^{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+\end_layout
+
+\begin_layout Standard
+Proin mauris orci, sagittis ut convallis at, egestas eget justo.
+ Nunc sed nunc sit amet nunc sagittis venenatis ac quis turpis.
+ Curabitur sit amet sapien non sapien pretium molestie.
+ Aliquam erat volutpat.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Quisque elementum, eros porttitor porta dictum, tortor metus commodo velit,
+ nec dapibus velit ipsum a dolor.
+ Mauris a luctus ligula.
+ Duis non tellus purus, sit amet tincidunt quam.
+ Pellentesque quis arcu dolor, ac dictum purus.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+ 
+\end_layout
+
+\begin_layout Chapter*
+CHAPTER VI
+\begin_inset Newline newline
+\end_inset
+
+Conclusions
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Chapter VI.
+ Conclusions}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{6}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+\end_layout
+
+\begin_layout Standard
+Proin mauris orci, sagittis ut convallis at, egestas eget justo.
+ Nunc sed nunc sit amet nunc sagittis venenatis ac quis turpis.
+ Curabitur sit amet sapien non sapien pretium molestie.
+ Aliquam erat volutpat.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Quisque elementum, eros porttitor porta dictum, tortor metus commodo velit,
+ nec dapibus velit ipsum a dolor.
+ Mauris a luctus ligula.
+ Duis non tellus purus, sit amet tincidunt quam.
+ Pellentesque quis arcu dolor, ac dictum purus.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+APPENDICES
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Appendices}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size larger
+APPENDIX A
+\begin_inset Newline newline
+\end_inset
+
+The inertial manifold
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+addcontentsline{toc}{section}{Appendix A: The Inertial Manifold }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{0}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+appcaption{
+\backslash
+textbf{APPENDIX A:} The inertial manifold}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+\end_layout
+
+\begin_layout Standard
+Proin mauris orci, sagittis ut convallis at, egestas eget justo.
+ Nunc sed nunc sit amet nunc sagittis venenatis ac quis turpis.
+ Curabitur sit amet sapien non sapien pretium molestie.
+ Aliquam erat volutpat.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Quisque elementum, eros porttitor porta dictum, tortor metus commodo velit,
+ nec dapibus velit ipsum a dolor.
+ Mauris a luctus ligula.
+ Duis non tellus purus, sit amet tincidunt quam.
+ Pellentesque quis arcu dolor, ac dictum purus.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+ 
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size larger
+APPENDIX B
+\begin_inset Newline newline
+\end_inset
+
+Centro-symmetry
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+addcontentsline{toc}{section}{Appendix B: Centrosymmetry }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{1}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+appcaption{
+\backslash
+textbf{APPENDIX B:} Centro-symmetry}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Appendix-centrosymmetry"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+\end_layout
+
+\begin_layout Standard
+Proin mauris orci, sagittis ut convallis at, egestas eget justo.
+ Nunc sed nunc sit amet nunc sagittis venenatis ac quis turpis.
+ Curabitur sit amet sapien non sapien pretium molestie.
+ Aliquam erat volutpat.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Quisque elementum, eros porttitor porta dictum, tortor metus commodo velit,
+ nec dapibus velit ipsum a dolor.
+ Mauris a luctus ligula.
+ Duis non tellus purus, sit amet tincidunt quam.
+ Pellentesque quis arcu dolor, ac dictum purus.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+\size larger
+APPENDIX C
+\begin_inset Newline newline
+\end_inset
+
+Temperature field snapshots from NG models
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+%
+\backslash
+addcontentsline{toc}{section}{Appendix C: Temperature field snapshots from
+ NG models }
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{section}{2}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+appcaption{
+\backslash
+textbf{APPENDIX C:} Temperature field snapshots from NG models}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Morbi consequat ornare gravida.
+ Mauris posuere turpis quis nisl fermentum ornare.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Morbi et mauris quis lacus dapibus scelerisque.
+ Nulla dignissim, nisl sit amet lobortis scelerisque, elit metus scelerisque
+ neque, id euismod massa nisi dictum nunc.
+ Suspendisse luctus placerat lacus.
+ Quisque luctus, odio et cursus consequat, ligula orci tempus velit, iaculis
+ aliquam ante dui laoreet orci.
+ Nullam convallis placerat nulla, id rhoncus dolor vulputate a.
+ Proin non metus gravida magna eleifend dignissim.
+ Donec malesuada ultricies erat vitae porttitor.
+\end_layout
+
+\begin_layout Standard
+Proin mauris orci, sagittis ut convallis at, egestas eget justo.
+ Nunc sed nunc sit amet nunc sagittis venenatis ac quis turpis.
+ Curabitur sit amet sapien non sapien pretium molestie.
+ Aliquam erat volutpat.
+ Pellentesque habitant morbi tristique senectus et netus et malesuada fames
+ ac turpis egestas.
+ Quisque elementum, eros porttitor porta dictum, tortor metus commodo velit,
+ nec dapibus velit ipsum a dolor.
+ Mauris a luctus ligula.
+ Duis non tellus purus, sit amet tincidunt quam.
+ Pellentesque quis arcu dolor, ac dictum purus.
+\end_layout
+
+\begin_layout Standard
+Sed ac neque in nunc auctor scelerisque.
+ Donec sed odio purus, non rhoncus odio.
+ Nullam vitae metus in leo ornare tempus ac sed diam.
+ Nam ut orci vel nibh commodo posuere.
+ Cras eu dolor eget ante dictum pulvinar.
+ Pellentesque eget lorem risus, quis egestas est.
+ Nulla facilisi.
+ Etiam accumsan turpis sed urna pellentesque pulvinar.
+ In hac habitasse platea dictumst.
+ Praesent ullamcorper nisi vel ante bibendum id aliquam justo blandit.
+ Sed tincidunt dolor id nulla mollis scelerisque sed vitae eros.
+ Nam sit amet nulla ac nisl facilisis sollicitudin et quis felis.
+ Nunc tempus magna id mi volutpat nec aliquet diam aliquet.
+ 
+\end_layout
+
+\begin_layout Standard
+\paragraph_spacing single
+\noindent
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Bibliography}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "yourbibfile"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
